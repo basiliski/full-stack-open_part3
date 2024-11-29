@@ -1,0 +1,28 @@
+### Test GET request for all persons
+GET http://localhost:3001/api/persons
+Accept: application/json
+
+### Test GET request for one person
+GET http://localhost:3001/api/persons/1
+Accept: application/json
+
+### Test POST request
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+    "name": "Test Person",
+    "number": "Some value"
+}
+
+### Test PUT request
+PUT http://localhost:3001/api/persons/1
+content-type: application/json
+
+{
+    "name": "Updated Person",
+    "number": "Updated value"
+}
+
+### Test DELETE request
+DELETE http://localhost:3001/api/persons/1
